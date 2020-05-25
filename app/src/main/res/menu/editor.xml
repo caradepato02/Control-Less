@@ -3,9 +3,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/action_editar_nombre"
+        android:icon="@drawable/ic_edit_24px"
+        android:title="@string/editor_action_editar_nombre" />
+    <item
         android:id="@+id/action_guardar"
         android:icon="@drawable/ic_save_24px"
         android:orderInCategory="100"
-        android:title="Guardar"
+        android:title="@string/editor_action_guardar"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/action_vincular"
+        android:title="@string/editor_action_vincular" />
 </menu>

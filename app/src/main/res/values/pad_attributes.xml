@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="view_pad">
+        <attr name="iconoArriba" format="integer"/>
+        <attr name="iconoAbajo" format="integer"/>
+        <attr name="iconoDerecha" format="integer"/>
+        <attr name="iconoIzquierda" format="integer"/>
+    </declare-styleable>
+</resources>

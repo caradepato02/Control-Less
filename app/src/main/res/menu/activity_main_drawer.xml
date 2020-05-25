@@ -9,8 +9,8 @@
             android:icon="@drawable/control2"
             android:title="Controles" />
         <item
-            android:id="@+id/nav_bluetooth"
-            android:icon="@drawable/ic_bluetooth_24px"
-            android:title="Bluetooth" />
+            android:id="@+id/nav_ajustes"
+            android:icon="@drawable/ic_settings_24px"
+            android:title="Ajustes" />
     </group>
 </menu>

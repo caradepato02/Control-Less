@@ -10,6 +10,26 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_editor">Editor</string>
 
     <string name="home_second">Home Second</string>
+
+
+    <string name="fragment_home_textview">Tus controles</string>
+
+    <string name="activity_conexion_tabItemWifi">Wi-fi</string>
+    <string name="activity_conexion_tabItemBluetoth">Bluetooth</string>
+
+    <string name="editor_action_guardar">Guardar</string>
+    <string name="editor_action_editar_nombre">Cambiar nombre</string>
+    <string name="editor_action_vincular">Vincular</string>
+
+    <string name="fragment_bluetooth_txtVw">Dispositivos bluetooth:</string>
+    <string name="fragment_bluetooth_btn">Vincular</string>
+
+    <string name="pop_menu_boton_item_accion">Accion</string>
+    <string name="pop_menu_boton_item_texto">Crear Radio Group</string>
+    <string name="pop_menu_boton_item_vincular">Vincular con Edit Text</string>
+
+
 </resources>

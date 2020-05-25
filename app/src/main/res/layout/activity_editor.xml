@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Editor">
+    tools:context=".controles.Editor">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,6 +44,15 @@
             android:layout_weight="1"
             android:background="@color/agregar"
             app:srcCompat="@drawable/ic_games_24px" />
+
+        <ImageButton
+            android:id="@+id/agregarBoton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/agregar"
+            app:srcCompat="@drawable/ic_stop_24px" />
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

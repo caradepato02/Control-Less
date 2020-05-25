@@ -1,4 +1,4 @@
-package com.example.prueba;
+package com.example.prueba.controles;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,8 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.prueba.Control;
-import com.example.prueba.Controles;
+import com.example.prueba.R;
 
 import java.util.ArrayList;
 
