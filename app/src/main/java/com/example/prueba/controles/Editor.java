@@ -142,9 +142,9 @@ public class Editor extends AppCompatActivity implements View.OnTouchListener, V
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_editar_nombre:
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 final EditText nombre = new EditText(this);
+                
                 builder.setView(nombre);
                 builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
