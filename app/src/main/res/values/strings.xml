@@ -27,9 +27,14 @@
     <string name="fragment_bluetooth_txtVw">Dispositivos bluetooth:</string>
     <string name="fragment_bluetooth_btn">Vincular</string>
 
-    <string name="pop_menu_boton_item_accion">Accion</string>
-    <string name="pop_menu_boton_item_texto">Crear Radio Group</string>
+
+    <string name="pop_menu_item_accion">Accion</string>
+    <string name="pop_menu_item_texto">Editar Texto</string>
+
     <string name="pop_menu_boton_item_vincular">Vincular con Edit Text</string>
+
+    <string name="pop_menu_radio_botton_item_crear">Crear Radio Group</string>
+    <string name="pop_menu_radio_botton_item_agregar">agregar a Radio Group</string>
 
 
 </resources>

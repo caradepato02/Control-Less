@@ -23,7 +23,7 @@
         android:id="@+id/nav_ajustes"
         android:name="com.example.prueba.ui.ajustes.AjustesFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_ajustes" >
+        tools:layout="@layout/fragment_ajustes">
         <action
             android:id="@+id/action_nav_ajustes_to_nav_home"
             app:destination="@id/nav_home" />
@@ -33,7 +33,7 @@
         android:id="@+id/nav_editor"
         android:name="com.example.prueba.ui.home.HomeFragment"
         android:label="@string/menu_editor"
-        tools:layout="@layout/activity_editor" >
+        tools:layout="@layout/activity_editor">
         <action
             android:id="@+id/action_nav_editor_to_nav_home"
             app:destination="@id/nav_home" />

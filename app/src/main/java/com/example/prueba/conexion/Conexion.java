@@ -1,13 +1,11 @@
 package com.example.prueba.conexion;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.os.Bundle;
-import android.util.Log;
-
 import com.example.prueba.R;
-import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
 public class Conexion extends AppCompatActivity {
@@ -36,7 +34,7 @@ public class Conexion extends AppCompatActivity {
         tabLayout.addTab(tabWifi);
         tabLayout.addTab(tabBluetooth);
         vwPager = findViewById(R.id.vwPager);
-        tAdapter = new TabAdapter(this,getSupportFragmentManager(), tabLayout.getTabCount());
+        tAdapter = new TabAdapter(this, getSupportFragmentManager(), tabLayout.getTabCount());
 
 
         vwPager.setAdapter(tAdapter);

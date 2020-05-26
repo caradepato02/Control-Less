@@ -14,13 +14,13 @@ import com.example.prueba.R;
 
 import java.util.ArrayList;
 
-public class ControlAdapter  extends ArrayAdapter<Control> {
+public class ControlAdapter extends ArrayAdapter<Control> {
     private Context context;
     private int resourse;
     private ArrayList<Control> objects;
 
     public ControlAdapter(@NonNull Context context, int resource, ArrayList<Control> objects) {
-        super(context, resource,objects);
+        super(context, resource, objects);
         this.context = context;
         this.resourse = resource;
         this.objects = objects;
@@ -29,8 +29,8 @@ public class ControlAdapter  extends ArrayAdapter<Control> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        if(convertView == null){
-            convertView = ((Activity)context).getLayoutInflater().inflate(resourse, parent, false);
+        if (convertView == null) {
+            convertView = ((Activity) context).getLayoutInflater().inflate(resourse, parent, false);
         }
         TextView txtNombre;
         txtNombre = convertView.findViewById(R.id.txtNombre);

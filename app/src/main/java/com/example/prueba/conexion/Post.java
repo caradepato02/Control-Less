@@ -2,7 +2,6 @@ package com.example.prueba.conexion;
 
 import android.util.Log;
 
-import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -13,6 +12,7 @@ public class Post extends Thread {
     public Post() {
 
     }
+
     public static void post(String url, byte data, String contentType) throws IOException {
         HttpURLConnection connection = null;
         OutputStreamWriter out = null;
@@ -28,13 +28,13 @@ public class Post extends Thread {
 
 
             os = connection.getOutputStream();
-            out = new OutputStreamWriter(os,"UTF-8");
+            out = new OutputStreamWriter(os, "UTF-8");
             out.write(datos);
             out.flush();
             out.close();
             os.close();
 
-            Log.wtf("Si","Envido");
+            Log.wtf("Si", "Envido");
 
 
         } finally {
@@ -49,7 +49,7 @@ public class Post extends Thread {
         super.run();
         byte data = 88;
         try {
-            post("http://192.168.1.79/",data,"application/x-www-form-urlencoded");
+            post("http://192.168.1.79/", data, "application/x-www-form-urlencoded");
         } catch (IOException e) {
             e.printStackTrace();
         }

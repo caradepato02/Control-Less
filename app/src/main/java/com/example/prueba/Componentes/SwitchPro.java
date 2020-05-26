@@ -7,4 +7,9 @@ public class SwitchPro extends Switch {
     public SwitchPro(Context context) {
         super(context);
     }
+
+    @Override
+    public String toString() {
+        return "SwitchPro";
+    }
 }

@@ -10,15 +10,15 @@ public class Controles {
 
     }
 
-    public static void addControl(Control c){
+    public static void addControl(Control c) {
         controls.add(c);
     }
 
-    public static int getSize(){
+    public static int getSize() {
         return controls.size();
     }
 
-    public static Control getControl(int posicion){
+    public static Control getControl(int posicion) {
         return controls.get(posicion);
     }
 

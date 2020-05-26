@@ -3,8 +3,6 @@ package com.example.prueba.controles;
 
 import android.view.View;
 
-import com.example.prueba.controles.Controles;
-
 import java.util.ArrayList;
 
 public class Control {
@@ -13,7 +11,7 @@ public class Control {
 
 
     public Control() {
-        this.nombre = "Control " + (Controles.getSize() + 1) ;
+        this.nombre = "Control " + (Controles.getSize() + 1);
     }
 
     public String getNombre() {
@@ -24,7 +22,7 @@ public class Control {
         this.nombre = nombre;
     }
 
-    public void addWidget(View v){
+    public void addWidget(View v) {
         widgets.add(v);
     }
 

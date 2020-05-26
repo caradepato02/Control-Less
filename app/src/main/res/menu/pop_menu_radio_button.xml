@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/popMenuRadioButtonItemAccion"
+        android:title="@string/pop_menu_item_accion" />
+    <item
+        android:id="@+id/popMenuRadioButtonItemTexto"
+        android:title="@string/pop_menu_item_texto" />
+    <item
+        android:id="@+id/popMenuRadioButtonItemCrear"
+        android:title="@string/pop_menu_radio_botton_item_crear" />
+    <item
+        android:id="@+id/popMenuRadioButtonItemAgregar"
+        android:title="@string/pop_menu_radio_botton_item_agregar" />
 </menu>

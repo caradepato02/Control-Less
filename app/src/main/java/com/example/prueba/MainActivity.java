@@ -1,44 +1,26 @@
 package com.example.prueba;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.MenuItem;
 import android.view.Menu;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.AdapterView;
+import android.view.MenuItem;
 import android.widget.ListView;
 
-import com.example.prueba.conexion.Post;
-import com.example.prueba.controles.ControlAdapter;
-import com.example.prueba.controles.Controles;
-import com.example.prueba.controles.Editor;
-import com.example.prueba.controles.UsoControl;
-import com.example.prueba.ui.home.HomeFragment;
-import com.google.android.material.navigation.NavigationView;
-
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import java.io.BufferedOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLEncoder;
+import com.example.prueba.conexion.Post;
+import com.example.prueba.controles.Controles;
+import com.example.prueba.controles.Editor;
+import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ListView lvwControles;
@@ -64,7 +46,6 @@ public class MainActivity extends AppCompatActivity  {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         controles = new Controles();
-
 
 
     }
@@ -94,7 +75,7 @@ public class MainActivity extends AppCompatActivity  {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_crear:
                 intent = new Intent(this, Editor.class);
                 startActivity(intent);
@@ -105,9 +86,6 @@ public class MainActivity extends AppCompatActivity  {
         }
 
     }
-
-
-
 
 
 }

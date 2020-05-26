@@ -8,20 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.prueba.MainActivity;
 import com.example.prueba.R;
 import com.example.prueba.controles.ControlAdapter;
 import com.example.prueba.controles.Controles;
-import com.example.prueba.controles.Editor;
 import com.example.prueba.controles.UsoControl;
 
 public class HomeFragment extends Fragment implements ListView.OnItemClickListener {
@@ -40,7 +34,7 @@ public class HomeFragment extends Fragment implements ListView.OnItemClickListen
     public void onStart() {
         super.onStart();
         lvwControles = getView().findViewById(R.id.lvwControles);
-        lvwControles.setAdapter(new ControlAdapter(getContext(),R.layout.cuadrito_control, Controles.controls));
+        lvwControles.setAdapter(new ControlAdapter(getContext(), R.layout.cuadrito_control, Controles.controls));
         lvwControles.setOnItemClickListener(this);
 
     }
@@ -53,9 +47,9 @@ public class HomeFragment extends Fragment implements ListView.OnItemClickListen
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Log.wtf("sfdgdf","dsfasdgdfag");
+        Log.wtf("sfdgdf", "dsfasdgdfag");
         intent = new Intent(parent.getContext(), UsoControl.class);
-        intent.putExtra("numControl",position);
+        intent.putExtra("numControl", position);
         startActivity(intent);
     }
 }
