@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,8 +34,11 @@ public class ControlAdapter extends ArrayAdapter<Control> {
             convertView = ((Activity) context).getLayoutInflater().inflate(resourse, parent, false);
         }
         TextView txtNombre;
+        ImageView imgicono;
+        imgicono =convertView.findViewById(R.id.imgIcono);
         txtNombre = convertView.findViewById(R.id.txtNombre);
         txtNombre.setText(objects.get(position).getNombre());
+        imgicono.setImageResource(objects.get(position).getIcono());
         return convertView;
     }
 }

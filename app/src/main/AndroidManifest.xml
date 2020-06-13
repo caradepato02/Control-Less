@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -13,8 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".controles.UsoControl"></activity>
-        <activity android:name=".conexion.Conexion" />
+        <activity android:name=".controles.SeleccionarIcono"></activity>
+        <activity android:name=".controles.UsoControl" />
+        <activity android:name=".conexion.Vincular" />
         <activity android:name=".controles.Editor" />
         <activity
             android:name=".MainActivity"

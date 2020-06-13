@@ -8,18 +8,24 @@
 
     <TextView
         android:id="@+id/txtViewTusControles"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_weight="1"
         android:text="@string/fragment_home_textview"
-        android:textAlignment="viewEnd" />
+        android:textAlignment="viewStart" />
 
     <ListView
         android:id="@+id/lvwControles"
+        style="@style/Widget.AppCompat.ListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="9"
+        android:cacheColorHint="#FFFFFF"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
         android:padding="10dp">
 
     </ListView>

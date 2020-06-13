@@ -13,4 +13,7 @@
     <item
         android:id="@+id/popMenuRadioButtonItemAgregar"
         android:title="@string/pop_menu_radio_botton_item_agregar" />
+    <item
+        android:id="@+id/popMenuRadioButtonItemEliminar"
+        android:title="@string/pop_menu_item_eliminar" />
 </menu>

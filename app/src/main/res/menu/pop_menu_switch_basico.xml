@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popMenuSwitchAccionEncendido"
+        android:title="@string/pop_menu_switch_item_accion_encendido" />
+    <item
+        android:id="@+id/popMenuSwitchAccionApagado"
+        android:title="@string/pop_menu_switch_item_accion_apagado" />
+    <item
+        android:id="@+id/popMenuSwitchTexto"
+        android:title="@string/pop_menu_item_texto" />
+    <item
+        android:id="@+id/popMenuSwitchEliminar"
+        android:title="@string/menu_uso_control_item_eliminar" />
+</menu>

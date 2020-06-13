@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/agregarRadioButton"
+            android:id="@+id/activityEditorAgregarRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -22,7 +22,7 @@
             app:srcCompat="@drawable/ic_radio_button_checked_24px" />
 
         <ImageButton
-            android:id="@+id/agregarTextArea"
+            android:id="@+id/activityEditorAgregarEditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -30,7 +30,7 @@
             app:srcCompat="@drawable/ic_text_format_24px" />
 
         <ImageButton
-            android:id="@+id/agregarSwitch"
+            android:id="@+id/activityEditorAgregarSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -38,25 +38,25 @@
             app:srcCompat="@drawable/ic_toggle_off_24px" />
 
         <ImageButton
-            android:id="@+id/agregarPad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/agregar"
-            app:srcCompat="@drawable/ic_games_24px" />
-
-        <ImageButton
-            android:id="@+id/agregarBoton"
+            android:id="@+id/activityEditorAgregarBoton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/agregar"
             app:srcCompat="@drawable/ic_stop_24px" />
 
+        <ImageButton
+            android:id="@+id/activityEditorAgregarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/agregar"
+            app:srcCompat="@drawable/ic_title_24px" />
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/areaComponentes"
+        android:id="@+id/activityEditorAreaComponentes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:baselineAligned="false" />

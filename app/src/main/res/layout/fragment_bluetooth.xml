@@ -5,17 +5,17 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtVwDispBth"
+        android:id="@+id/fragmentBluetoothTxtVwDispBth"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
-        android:text="@string/fragment_bluetooth_txtVw"
+        android:text="@string/fragment_bluetooth_txtVwDispositivos"
         android:textColor="@color/design_default_color_on_secondary"
         android:textSize="18sp" />
 
     <ListView
-        android:id="@+id/lstVwDispBth"
+        android:id="@+id/fragmentBluetoothLstVwVinculados"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="8">
@@ -23,10 +23,10 @@
     </ListView>
 
     <Button
-        android:id="@+id/btnVincular"
+        android:id="@+id/fragmentBluetoothBtnVincular"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_weight="1"
-        android:text="@string/fragment_bluetooth_btn" />
+        android:text="@string/fragment_bluetooth_and_wifi_btnVincular" />
 </LinearLayout>

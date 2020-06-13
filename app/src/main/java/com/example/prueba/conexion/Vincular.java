@@ -8,7 +8,13 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.prueba.R;
 import com.google.android.material.tabs.TabLayout;
 
-public class Conexion extends AppCompatActivity {
+public class Vincular extends AppCompatActivity {
+    public static final String EXTRA_DIRECCION_MAC = "macDispositivo";
+    public static final String EXTRA_DIRECCION_IP = "ipDispositivo";
+
+    public static final int RESULT_BLUETOOTH = 1;
+    public static final int RESULT_WIFI = 2;
+
 
     private TabLayout tabLayout;
     private ViewPager vwPager;
@@ -19,8 +25,8 @@ public class Conexion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_conexion);
-
+        setTitle(R.string.menu_vinculo);
+        setContentView(R.layout.activity_vincular);
         tabLayout = findViewById(R.id.tabLayout);
         tabWifi = tabLayout.newTab();
         tabBluetooth = tabLayout.newTab();
@@ -36,10 +42,8 @@ public class Conexion extends AppCompatActivity {
         vwPager = findViewById(R.id.vwPager);
         tAdapter = new TabAdapter(this, getSupportFragmentManager(), tabLayout.getTabCount());
 
-
         vwPager.setAdapter(tAdapter);
         vwPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -48,12 +52,10 @@ public class Conexion extends AppCompatActivity {
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-
             }
         });
     }

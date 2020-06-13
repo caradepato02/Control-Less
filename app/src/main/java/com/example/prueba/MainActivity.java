@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +14,6 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.prueba.conexion.Post;
 import com.example.prueba.controles.Controles;
 import com.example.prueba.controles.Editor;
 import com.google.android.material.navigation.NavigationView;
@@ -23,8 +21,6 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    private ListView lvwControles;
-    private Controles controles;
     private Intent intent;
 
     @Override
@@ -45,19 +41,10 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-        controles = new Controles();
 
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-        Post post = new Post();
-        //post.start();
-
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

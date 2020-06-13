@@ -3,16 +3,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_editar_nombre"
+        android:id="@+id/editorActionEditarNombre"
         android:icon="@drawable/ic_edit_24px"
         android:title="@string/editor_action_editar_nombre" />
     <item
-        android:id="@+id/action_guardar"
+        android:id="@+id/editorActionGuardar"
         android:icon="@drawable/ic_save_24px"
         android:orderInCategory="100"
         android:title="@string/editor_action_guardar"
         app:showAsAction="always" />
     <item
-        android:id="@+id/action_vincular"
+        android:id="@+id/editorActionVincular"
+        android:icon="@drawable/ic_import_export_24px"
         android:title="@string/editor_action_vincular" />
+    <item
+        android:id="@+id/editorActionCambiarIcono"
+        android:title="@string/editor_action_cambiar_icono" />
 </menu>

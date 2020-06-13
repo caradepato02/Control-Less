@@ -7,12 +7,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Controles</string>
+    <string name="menu_ajustes">Ajustes</string>
     <string name="menu_editor">Editor</string>
-
-    <string name="home_second">Home Second</string>
+    <string name="menu_vinculo">Vincular</string>
+    <string name="menu_icono">Iconos</string>
 
 
     <string name="fragment_home_textview">Tus controles</string>
@@ -23,18 +22,59 @@
     <string name="editor_action_guardar">Guardar</string>
     <string name="editor_action_editar_nombre">Cambiar nombre</string>
     <string name="editor_action_vincular">Vincular</string>
+    <string name="editor_action_cambiar_icono">Cambiar icono</string>
 
-    <string name="fragment_bluetooth_txtVw">Dispositivos bluetooth:</string>
-    <string name="fragment_bluetooth_btn">Vincular</string>
+    <string name="menu_uso_control_item_editar">Editar</string>
+    <string name="menu_uso_control_item_eliminar">Eliminar</string>
+    <string name="uso_control_dialog_eliminar">Eliminar el control?</string>
 
+    <string name="fragment_bluetooth_txtVwDispositivos">Dispositivos bluetooth:</string>
+
+    <string name="fragment_wifi_txtVwDireccion">Dirección del servidor:</string>
+
+    <string name="fragment_bluetooth_and_wifi_btnVincular">Vincular</string>
 
     <string name="pop_menu_item_accion">Accion</string>
     <string name="pop_menu_item_texto">Editar Texto</string>
+    <string name="pop_menu_item_eliminar">Eliminar</string>
 
-    <string name="pop_menu_boton_item_vincular">Vincular con Edit Text</string>
+    <string name="pop_menu_edit_text_item_vincular">Vincular con boton</string>
 
     <string name="pop_menu_radio_botton_item_crear">Crear Radio Group</string>
     <string name="pop_menu_radio_botton_item_agregar">agregar a Radio Group</string>
+    <string name="pop_menu_radio_botton_item_vinculado">Vinculado</string>
+
+    <string name="pop_menu_button_item_accion_presionar">Acción presionar</string>
+    <string name="pop_menu_button_item_accion_soltar">Acción soltar</string>
+
+    <string name="pop_menu_switch_item_accion_encendido">Acción encendido</string>
+    <string name="pop_menu_switch_item_accion_apagado">Acción apagado</string>
+
+    <string name="dialog_title_texto">Editar texto</string>
+    <string name="dialog_title_accion">Editar accion</string>
+    <string name="dialog_title_crear_radio_group">Nombre del Radio Group</string>
+    <string name="dialog_title_agregar_radio_group">Seleccionar Radio Group</string>
+    <string name="dialog_title_nombre">Nombre del control</string>
+    <string name="dialog_title_edit_text_vincular">Seleccionar boton</string>
+    <string name="dialog_aceptar">Aceptar</string>
+    <string name="dialog_cancelar">Cancelar</string>
+
+    <string name="seleccionar_icono_text_view_seleccionar">Selecciona un icono</string>
+
+    <string name="uso_control_toast_conectado">Conectado</string>
+    <string name="uso_control_toast_error_conectar">No se logro conectar</string>
+    <string name="uso_control_toast_desconectado">Desconectado</string>
+    <string name="uso_control_toast_enviado">Enviado</string>
+
+
+
+    <string name="text_default_TextView">Text View</string>
+    <string name="text_default_EditText">Edit Text</string>
+    <string name="text_default_RadioButton">Radio Button</string>
+    <string name="text_default_Switch">Switch</string>
+    <string name="text_default_Button">Button</string>
+
+
 
 
 </resources>

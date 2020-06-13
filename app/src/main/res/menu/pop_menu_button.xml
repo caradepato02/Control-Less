@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popMenuButtonAccionPresionar"
+        android:title="@string/pop_menu_button_item_accion_presionar" />
+    <item
+        android:id="@+id/popMenuButtonAccionSoltar"
+        android:title="@string/pop_menu_button_item_accion_soltar" />
+    <item
+        android:id="@+id/popMenuButtonTexto"
+        android:title="@string/pop_menu_item_texto" />
+    <item
+        android:id="@+id/popMenuButtonEliminar"
+        android:title="@string/pop_menu_item_eliminar" />
+</menu>
